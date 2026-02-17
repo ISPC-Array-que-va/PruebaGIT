@@ -16,3 +16,6 @@ total_ingresos = 0
 for i in mo.ingresos:
     total_ingresos = total_ingresos + i
 print("Total de Ingresos:", total_ingresos, "\n")
+
+
+print("desarrollador: Iván Bürcher")
