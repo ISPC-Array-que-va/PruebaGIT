@@ -21,3 +21,6 @@ print("Total de Ingresos:", total_ingresos, "\n")
 Saldo = total_ingresos - total_gastos
 
 print("Saldo = ", Saldo, "\n")
+
+
+print("desarrollador: Iván Bürcher")
