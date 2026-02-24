@@ -1,5 +1,9 @@
 import datos as mo
 
+import colorama
+from colorama import Fore
+from colorama import Style
+
 #ESCRIBIR GASTOS
 for nombre in mo.nombres:
     print(nombre, end=" ")
@@ -9,17 +13,17 @@ print("\n \n")
 total_gastos = 0
 for i in mo.gastos:
     total_gastos = total_gastos + i
-print("Total de Gastos:", total_gastos)
+print(Fore.RED + Style.BRIGHT + "Total de Gastos:" + Style.RESET_ALL, total_gastos)
 
 #SUMAR ingresos
 total_ingresos = 0
 for i in mo.ingresos:
     total_ingresos = total_ingresos + i
-print("Total de Ingresos:", total_ingresos)
+print(Fore.GREEN + "Total de Ingresos:"+ Style.RESET_ALL, total_ingresos)
 
 #Saldo
 Saldo = total_ingresos - total_gastos
 
-print("Saldo = ", Saldo, "\n")
+print(Fore.BLUE + Style.BRIGHT + "Saldo = "+ Style.RESET_ALL, Saldo, "\n")
 
-print("desarrollador: Iván Bürcher")
+print("Desarrollador: Iván Bürcher")
